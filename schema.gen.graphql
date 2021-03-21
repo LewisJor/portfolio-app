@@ -18,14 +18,22 @@ scalar Date
 
 type Position {
   company: String
-  endDate: String
+
+  """Date when I left Position."""
+  endDate: Date
   id: ID
-  startDate: String
+  location: String
+  months: Int
+  startDate: Date
   title: String
+  years: Int
 }
 
 type Query {
   bio: Bio
+
+  """Find a position by it's ID"""
+  position(id: ID): Position
   positions: [Position]
 }
 

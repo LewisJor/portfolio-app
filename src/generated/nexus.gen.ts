@@ -78,13 +78,17 @@ export interface NexusGenFieldTypes {
   }
   Position: { // field return type
     company: string | null; // String
-    endDate: string | null; // String
+    endDate: NexusGenScalars['Date'] | null; // Date
     id: string | null; // ID
-    startDate: string | null; // String
+    location: string | null; // String
+    months: number | null; // Int
+    startDate: NexusGenScalars['Date'] | null; // Date
     title: string | null; // String
+    years: number | null; // Int
   }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio'] | null; // Bio
+    position: NexusGenRootTypes['Position'] | null; // Position
     positions: Array<NexusGenRootTypes['Position'] | null> | null; // [Position]
   }
 }
@@ -100,18 +104,27 @@ export interface NexusGenFieldTypeNames {
   }
   Position: { // field return type name
     company: 'String'
-    endDate: 'String'
+    endDate: 'Date'
     id: 'ID'
-    startDate: 'String'
+    location: 'String'
+    months: 'Int'
+    startDate: 'Date'
     title: 'String'
+    years: 'Int'
   }
   Query: { // field return type name
     bio: 'Bio'
+    position: 'Position'
     positions: 'Position'
   }
 }
 
 export interface NexusGenArgTypes {
+  Query: {
+    position: { // args
+      id?: string | null; // ID
+    }
+  }
 }
 
 export interface NexusGenAbstractTypeMembers {

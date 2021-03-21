@@ -12,5 +12,6 @@ export interface PositionInterface {
   title: string;
   company: string;
   startDate: string;
+  location: string;
   endDate?: string;
 }

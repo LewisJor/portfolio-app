@@ -8,7 +8,7 @@ export const schema = makeSchema({
     schema: path.join(process.cwd(), "schema.gen.graphql"),
     typegen: path.join(process.cwd(), "src", "generated", "nexus.gen.ts"),
   },
-  typegenAutoConfig: {
+  typegenAutoConfig: { 
     sources: [
       {
         alias: "faces",
