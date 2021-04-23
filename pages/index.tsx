@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useQuery, gql } from "@apollo/Client";
+import { useQuery, gql } from "@apollo/client";
 import styles from "../styles/Home.module.css";
 
 const ResumeQuery = gql`
@@ -35,7 +35,7 @@ export default function Home() {
     return (
       <header className={styles.header}>
         <h1>Jordan Lewis</h1>
-        <h2>Loading....</h2>
+        <h2>loading....</h2>
       </header>
     );
   }

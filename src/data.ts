@@ -11,7 +11,7 @@ export const data = {
     positions: [
         {
             id: "1",
-            title: "Application Development Engineer",
+            title: "Application Development Senior Engineer",
             company: "American Family Insurance",
             startDate: "9-11-2019",
             location: "Madison, Wisconsin",
